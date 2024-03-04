@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odinsf restaurants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="nev">
+        <img src="./images/logo1.png" alt="">
+        <div class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><ion-icon name="search-outline"></ion-icon></li>
+            </ul>
+        </div>
+    </section>
+    <section class="slider" id="home">
+        <div class="slider_img"></div>
+        <div class="slider_contain">
+            <h2>Title Here</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, sint nisi possimus quos nobis ea rerum blanditiis dicta veniam labore!</p>
+            <button>Order now</button>
+        </div>
+
+    </section>
+    <section class="product" id="product">
+        <h3 class="section_title">Best Seller</h3>
+        <p class="section_ds">Lorem ipsum deserunt voluptate, Lorem ipsum dolor sit amet. cumque et expedita, suscipit unde modi.</p>
+        <div class="product_items">
+            <div class="items">
+                <img src="./images/item1.png" alt="">
+                <h3 class="image_title">Title here</h3>
+                <p class="image_ds">Lorem ipsum dolor sit amet . Odit?</p>
+            </div>
+            <div class="items">
+                <img src="./images/item2.png" alt="">
+                <h3 class="image_title">Title here</h3>
+                <p class="image_ds">Lorem ipsum dolor sit amet. Odit?</p>
+            </div>
+            <div class="items">
+                <img src="./images/item3.png" alt="">
+                <h3 class="image_title">Title here</h3>
+                <p class="image_ds">Lorem ipsum dolor sit amet . Odit?</p>
+            </div>
+        </div>
+    </section>
+    <section class="promo_upper" id="promo">
+        <img src="./images/img2.png" alt="">
+        <div class="promo_text">
+            <h3 class="promo_title">Oriental Taste</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, fugit omnis voluptatum atque ea error.</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+    <section class="promo_details">
+        <h3 class="promo_heading">Statistics</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque voluptatum in pariatur adipisci quis quae eius labore saepe, accusamus ratione!</p>
+        <div class="promo_item">
+            <div class="items">
+                <h3>123</h3>
+                <p>outlets</p>
+            </div>
+            <div class="items">
+                <h3>100</h3>
+                <p>shef</p>
+            </div>
+            <div class="items">
+                <h3>300</h3>
+                <p>menu</p>
+            </div>
+            <div class="items">
+                <h3>30</h3>
+                <p>country</p>
+            </div>
+        </div>
+    </section>
+    <section class="promo_bottom">
+        <div class="promo_bottom_text promo_text">
+            <h3>Chicken Grill</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem dolor fugit deleniti. Non fuga laudantium veniam natus quod consequuntur!</p>
+            <button>ORDER NOW</button>
+        </div>
+        <img src="./images/img3.png" alt="">
+    </section>
+    <section class="about" id="about">
+        <p>Lorem ipsum dolor sit amet consectetur minima eius voluptatibus ea fugit necessitatibus vel totam voluptatem magni facilis reprehenderit consequuntur ad!</p>
+        <h3>Lenara Filds</h3>
+    </section>
+    <section class="contact" id="contact">
+        <h3 class="contact_heading">Subscribe</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus explicabo aspernatur odit veritatis consequatur nisi?</p>
+        <div>
+            <input type="email" name="email" id="" placeholder="Your Email">
+            <button>Subscribe</button>
+        </div>
+    </section>
+    <footer>
+        <div class="title">
+            <h4>Title Hare</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo modi placeat facilis rem culpa saepe, aut doloremque fugit omnis? Voluptates?</p>
+            <div class="icons">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+        </div>
+        <div class="footer_about">
+            <h4>About</h4>
+            <a href="#">History</a>
+            <a href="#">Our team</a>
+            <a href="#">Brand Guidelines</a>
+            <a href="#">Terms&Condition</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer_service">
+            <h4>Service</h4>
+            <a href="#">How to order</a>
+            <a href="#">Our product</a>
+            <a href="#">Order Status</a>
+            <a href="#">Promo</a>
+            <a href="#">Payment Method</a>
+        </div>
+        <div class="other">
+            <h4>Other</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Help</a>
+            <a href="#">Privacy</a>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function () {
+            let nev = document.querySelector(".nev");
+            nev.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

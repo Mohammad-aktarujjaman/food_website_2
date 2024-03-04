@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+/* font-family: "Grand Hotel", cursive; */
+/* ===========common css design======== */
+html {
+  scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+section h3.section_title{
+    font-family: "Grand Hotel", cursive;
+    font-size: 3.5em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.779);
+}
+section p.section_ds{
+    width: 750px;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.779);
+}
+/* ==========navigation bar design============= */
+.nev{
+    display: flex;
+    padding: 20px 50px;
+    height: 70px;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 100;
+    width: 100%;
+    line-height: 30px;
+    transition: .2s;
+}
+.nev.sticky{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: #0005;
+
+}
+.nev .navigation ul{
+    display: flex;
+    gap: 30px;
+}
+.nev .navigation ul li a{
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .4s;
+}
+.nev .navigation ul li a:hover{
+    background: #2424247b;
+}
+.nev .navigation ul li:last-child{
+    height: 30px;
+    width: 30px;
+}
+.nev .navigation ul li ion-icon{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 5px;
+    font-weight: 500;
+    transition: .3s;
+ 
+}
+.nev .navigation ul li ion-icon:hover{
+    font-size: 1.8em;
+}
+
+/* =======slider section design======= */
+.slider{
+    display: flex;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* background: #2F2F2F; */
+
+}
+.slider_img{
+    width: 40%;
+    background: url(./images/img1.png);
+}
+.slider .slider_contain{
+    width: 70%;
+    background: url(./images/bg1.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 170px 0 240px;
+    filter: drop-shadow(inset 5px 5px #2F2F2F);
+}
+.slider .slider_contain h2{
+    font-family: "Grand Hotel", "cursive";
+    color: #FFC200;
+    font-size: 5em;
+    font-weight: 300;
+}
+.slider .slider_contain p{
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+.slider .slider_contain button{
+    background-color: #FFC200;
+    width: 140px;
+    padding: 10px 10px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 4px 4px 10px #00000086,
+    inset 4px 4px 20px #00000054,
+    inset -4px -4px 10px #070500d6;
+}
+.slider .slider_contain button:hover{
+    box-shadow: 10px 10px 20px #00000054,
+    -10px -10px 20px #00000054,
+    inset 4px 4px 10px #00000086,
+    inset 4px 4px 20px #00000054,
+    inset -4px -4px 10px #070500d6;
+}
+/* ============product section design====== */
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120vh;
+    justify-content: center;
+    padding: 150px;
+    gap: 30px;
+}
+.product_items{
+    display: flex;
+}
+.product_items .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+}
+.product_items .items .image_title{
+    font-family: "Grand Hotel", cursive;
+    font-size: 2em;
+    font-weight: 300;
+}
+.product_items .items .image_ds{
+    text-align: center;
+}
+/* ==========promo upper section design============= */
+.promo_upper{
+    display: flex;
+    background: url(./images/bg2.png);
+    background-position: top;
+    background-size: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding: 100px;
+    gap: 200px;
+}
+.promo_upper img{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+.promo_text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 40px;
+}
+.promo_text h3{
+    font-size: 4em;
+    font-family: "Grand Hotel", cursive;
+    color: #FFC200;
+    font-weight: 500;
+}
+.promo_text p{
+    font-size: 1.8em;
+    color: #fff9;
+}
+.promo_text button{
+    width: 200px;
+    padding: 15px;
+    font-size: 1.3em;
+    background: #FFC200;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+}
+/* =======promo details design====== */
+.promo_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/bg3.png);
+    background-size: 100vw;
+    background-position: center;
+    height: 700px;
+    gap: 40px;
+    color: #fff;
+    overflow: hidden;
+    padding: 100px;
+}
+.promo_details .promo_heading{
+    color: #FFC200;
+    font-family: "Grand Hotel", cursive;
+    font-size: 4em;
+    font-weight: 500;
+}
+.promo_details > p{
+    width: 600px;
+    color: #ddd;
+    text-align: center;
+}
+.promo_item{
+    display: flex;
+    gap: 30px;
+}
+.promo_item .items{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.promo_item .items h3{
+    color: #FFC200;
+    font-size: 2em;
+}
+.promo_item .items p{
+    margin: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* ==============promo bottom design====== */
+.promo_bottom{
+    display: flex;
+    padding: 100px;
+    height: 600px;
+    background: url(./images/bg4.png);
+    background-size: 100vw;
+    background-position: bottom;
+    padding-bottom: 150px;
+    margin-bottom: 100px;
+}
+.promo_bottom .promo_bottom_text{
+    margin-top: 0;
+}
+.promo_bottom img{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+/* =======down slider section design============= */
+.about{
+    background: url(./images/img4.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+}
+.about::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #FFC200aa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.about p{
+    width: 600px;
+    color: #000000;
+    text-align: center;
+    font-size: 1.8em;
+}
+.about h3{
+    color: #000;
+    font-family: "Grand Hotel", cursive;
+    font-size: 4em;
+    font-weight: 500;
+}
+/* ============contact section design====== */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./images/bg5.png);
+    background-size: 100vw;
+    background-position: center;
+    height: 500px;
+}
+.contact_heading{
+    color: #000;
+    font-family: "Grand Hotel", cursive;
+    font-size: 4em;
+    font-weight: 500;
+}
+.contact p{
+    width: 700px;
+    font-size: 1.4em;
+    text-align: center;
+}
+.contact div{
+    display: flex;
+    margin-top: 50px;
+    width: 50%;
+}
+.contact div input{
+    padding: 15px;
+    width: 70%;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.271);
+    border-radius: 0 0 5px 5px;
+}
+.contact div input:focus{
+    border: none;
+    outline: 1px solid #838282;
+}
+.contact div button{
+    width: 30%;
+    background-color: #FFC200;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* =========footer section design======= */
+footer{
+    display: flex;
+    padding: 150px 100px;
+    background-color: #303030;
+}
+footer .title{
+    width: 40%;
+}
+footer p{
+    color: #ddd;
+    padding-right: 100px;
+    margin: 30px 0;
+}
+footer h4{
+    color: #ddd;
+    font-size: 1.8em;
+}
+footer .title .icons{
+    display: flex;
+    gap: 5px;
+}
+footer .title .icons ion-icon{
+    height: 20px;
+    width: 20px;
+    background: #ddd;
+    color: #303030;
+    border-radius: 50%;
+    padding: 5px;
+}
+.footer_about , .footer_service{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.other{
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer div a{
+    color: #fff;
+}
+
+/* =============== code for make responsive ===============*/
+
+
+
+/* ======== design for tablet====== */
+/* @media only screen and (max-width: 1100px) { */
+    /* .slider_img{ */
+        /* display: none; */
+    /* } */
+    /* .slider .slider_contain { */
+        /* width: 100%; */
+    /* } */
+    /* .product{ */
+        /* padding: 0; */
+    /* } */
+    /* .product_items .items{ */
+        /* padding: 0 35px; */
+    /* } */
+    /* .promo_upper{ */
+        /* gap: 100px; */
+    /* } */
+  /* } */
